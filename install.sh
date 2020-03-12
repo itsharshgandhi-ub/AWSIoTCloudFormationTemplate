@@ -1,10 +1,12 @@
 # Installing AWS CLI
+cd /home/ec2-user
+su ec2-user
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "/home/ec2-user/awscliv2.zip"
 mkdir a1
 unzip /home/ec2-user/awscliv2.zip
 mkdir a2
-/home/ec2-user/aws/install
-/aws/install
+sudo /home/ec2-user/aws/install
+sudo ./aws/install
 mkdir a3
 # Configuring AWS CLI
 aws configure set aws_access_key_id $1
